@@ -4,7 +4,7 @@ import cv2
 import numpy as np
 import findSet as f
 import re
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 model = tensorflow.keras.models.load_model('SetSolverModel_v3_final.h5')
 CLASS_NAMES = ['twoMediumPurpleOval', 'twoFullRedWave','twoMediumRedOval',
@@ -70,7 +70,7 @@ while True:
         area = cv2.contourArea(contour)
         
         
-        if area > 10000:
+        if area > 10000 :
 
           n=n+1
           x,y,w,h = cv2.boundingRect(contour)
@@ -105,12 +105,14 @@ while True:
           #print the results of detection
           PC=prediction[0][pred_id]*100
           # print(f'The result is : {pred_label} with {float(PC)} Accuracy %')
-          name= str(pred_label) + ":" + str(PC)
+          name= str(pred_label) + ":" + str(int(PC))
           cv2.putText(frame,name,(x,y),cv2.FONT_HERSHEY_SIMPLEX,0.5,(255,255,255),0)
           
 
-  print("cards: ",cards)
+  #print("cards: ",cards)
   cv2.imshow('frame',frame)
+  cv2.imshow('mask',mask)
+  
   
   
   
@@ -135,7 +137,7 @@ while True:
   collection=extractCards(cards)
   print(f"We found {len(f.getSets(collection))} sets :",f.getSets(collection))
   
-  key = cv2.waitKey(10)
+  key = cv2.waitKey(1)
 
   if key == 27:
     break
