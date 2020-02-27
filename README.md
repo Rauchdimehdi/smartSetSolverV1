@@ -7,7 +7,6 @@ Set is a real-time card game designed by Marsha Falco in 1974 and published by S
 
 > Our application is composed mainly from a Raspberry & Google Coral ( Edge Computing )
 
-![Screenshot from 2020-01-27 15-01-55](https://user-images.githubusercontent.com/40724965/73926564-22a72c00-48d0-11ea-9e3c-3bb4ba48dd82.png)
 
 
 +Step 1: To be able to detect Set cards we need a model that is pre-trained to do that. That's why we started by creating our own model that recognize set cards cards using ' Transfer Learning '. For more information, please open google colab file named 0_3CopiedeSetSolverHub_V3_1.ipynb to understand how we did that.
@@ -22,7 +21,6 @@ After creating a keras model that can finally detect which cards, we converted i
 
 ![modelApplied](https://user-images.githubusercontent.com/40724965/75487078-0ae23580-59ae-11ea-89d3-fce3ae96cdeb.png)
 
-![Screenshot from 2020-01-27 15-01-55](https://user-images.githubusercontent.com/40724965/73927021-efb16800-48d0-11ea-95aa-22574cd285ed.png)
 
 +Step 4: Excute our algorithme to check the set
 ![Screenshot from 2020-02-04 11-50-18](https://user-images.githubusercontent.com/40724965/73927107-0fe12700-48d1-11ea-9d35-a2ea39f89f5b.png)
