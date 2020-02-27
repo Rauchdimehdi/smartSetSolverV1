@@ -1,4 +1,4 @@
-# smartSetSolverV1
+# smartSetSolverV1 
 
 
 Set is a real-time card game designed by Marsha Falco in 1974 and published by Set Enterprises in 1991. The deck consists of 81 unique cards that vary in four features across three possibilities for each kind of feature: number of shapes (one, two, or three), shape (diamond, squiggle, oval), shading (solid, striped, or open), and color (red, green, or purple)
@@ -17,10 +17,11 @@ After creating a keras model that can finally detect which cards, we converted i
 
 ![1](https://user-images.githubusercontent.com/40724965/73926958-d3adc680-48d0-11ea-84ea-961741b2cbe2.png)
 
-+Step 3: Apllying the Tensorflow lite model to detect cards
++Step 3: Apllying the Tensorflow lite model to detect cards 
 
 ![modelApplied](https://user-images.githubusercontent.com/40724965/75487078-0ae23580-59ae-11ea-89d3-fce3ae96cdeb.png)
 
+>  	cardsDetection_Rasp.py for a Raspberry + Google Coral & cardsDetection_V4.py if you are using your own laptop
 
 +Step 4: Excute our algorithme to check the set
 ![Screenshot from 2020-02-04 11-50-18](https://user-images.githubusercontent.com/40724965/73927107-0fe12700-48d1-11ea-9d35-a2ea39f89f5b.png)
